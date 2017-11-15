@@ -1,0 +1,7 @@
+shiny:
+  apps:
+  - name: flexdashboardTest1
+    display-name: flexdashboard shiny-eruptions
+    description: flexdashboard test - Old Faithful Eruptions
+    docker-cmd: ["R", "-e rmarkdown::run('/root/flexdashboard/index.Rmd',shiny_args=list(host='127.0.0.0',port=3838))"]
+    docker-image: paypredict/test1
